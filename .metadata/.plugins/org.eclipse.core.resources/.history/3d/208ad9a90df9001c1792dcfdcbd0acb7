@@ -1,0 +1,21 @@
+package com.chax.psl;
+
+import java.util.Scanner;
+
+public class Practice1 
+{
+	public static void main(String []args)
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter n values :");
+		int n=sc.nextInt();
+		 int []inta;
+		 for(int i=0;i<=n;i++)
+		 {
+			 if(i==n)
+		 inta=new int[n];
+		 }
+		 System.out.println("n values is :"+n);
+	}
+
+}

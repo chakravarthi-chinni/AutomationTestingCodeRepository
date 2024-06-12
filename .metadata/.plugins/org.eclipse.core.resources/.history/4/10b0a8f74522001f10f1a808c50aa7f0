@@ -1,0 +1,24 @@
+package org.chax.testing;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public class AutoSuggestiveProblems {
+	public static void main(String[] args) {
+		webDriver driver=new ChromeDriver();
+		
+			driver.get("https://rahulshettyacademy.com/dropdownsPractise/");
+			driver.findElement(By.cssSelector("input[id='autosuggest']")).sendKeys("in");
+			List<WebElement> options = driver.findElements(By.cssSelector("ul[id='ui-id-1']"));
+			for(WebElement we:options) {
+				if(we.getText().equalsIgnoreCase("India")) {
+					we.click();
+					break;
+				}
+		}
+	}
+
+}

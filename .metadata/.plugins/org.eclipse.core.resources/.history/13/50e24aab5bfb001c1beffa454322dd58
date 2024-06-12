@@ -1,0 +1,25 @@
+package com.chax.psl;
+
+import java.util.Scanner;
+
+public class ChocoloateFactory 
+{
+	public static void main(String[] args) 
+	{
+		int i;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter n value of chocolates : ");
+		int candy=sc.nextInt();
+		Double []Array=new Double[candy];
+		System.out.println("chocolate list is : ");
+		for(i=0;i<candy;i++)
+		{
+			Array[i]=sc.nextDouble();
+		}
+		if(Array[i]==0)
+		{
+			=A[] + Array[i];
+		}	
+	}
+
+}

@@ -1,0 +1,34 @@
+package org.chax.testing;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+
+public class MouseActionsPrograms {
+
+	public static void main(String[] args) throws InterruptedException {
+
+		WebDriver driver=new ChromeDriver();
+		driver.get("https://www.flipkart.com/");
+		//driver.findElement(By.xpath("//a[@title='Login'] //span")).click();
+		Actions act=new Actions(driver);
+		
+		WebElement move=driver.findElement(By.xpath("//input[@title='Search for Products, Brands and More']"));
+		act.moveToElement(move).sendKeys("iphone 15").build().perform();
+		List<WebElement> mobileList=driver.findElements(By.cssSelector("._1sFryS._2x2Mmc._3ofZy1"));
+		for(WebElement mList: mobileList) {
+			if(mList.getText().equalsIgnoreCase("iphone 15")) {
+				mList.click();
+				break;
+			}
+		}
+		Thread.sleep(3000);
+		driver.close();
+		
+	}
+
+}

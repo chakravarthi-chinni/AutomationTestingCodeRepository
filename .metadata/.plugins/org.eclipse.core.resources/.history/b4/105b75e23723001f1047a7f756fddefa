@@ -1,0 +1,16 @@
+package org.chax.testing;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class CalenderTestingPrograms {
+
+	public static void main(String[] args) {
+		WebDriver driver = new ChromeDriver();
+		driver.get("https://rahulshettyacademy.com/seleniumPractise/#/offers");
+		//driver.findElement(By.cssSelector(".react-date-picker.react-date-picker--closed.react-date-picker--enabled"));
+		driver.findElement(By.cssSelector(".react-date-picker__calendar-button__icon.react-date-picker__button__icon")).click();
+		
+	}
+}

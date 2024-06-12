@@ -1,0 +1,38 @@
+package org.chakri.com;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class PaginationObjectModelPrograms {
+	WebDriver driver;
+	
+	public PaginationObjectModelPrograms(WebDriver driver){
+		this.driver=driver;
+		PageFactory.initElements(driver, this);
+		
+	}
+	
+	public void landOnPage(WebDriver driver) {
+		//driver.get("https://rahulshettyacademy.com/client");
+		
+		//@FindBy()	
+	}
+	
+	
+//		driver.findElement(By.id("userEmail")).sendKeys("chakri123@gmail.com");
+//		driver.findElement(By.id("userPassword")).sendKeys("Chakri@123");
+//		driver.findElement(By.id("login")).click();
+		
+		@FindBy(id="userEmail")
+		WebElement userEmail;
+		
+		@FindBy(id="userPassword")
+		WebElement userPassword;
+		
+		@FindBy(id="login")
+		WebElement submit;
+
+}

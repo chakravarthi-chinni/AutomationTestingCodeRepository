@@ -1,0 +1,29 @@
+package com.chax.psl;
+import java.util.*;
+
+public class DuplicateLettersShow 
+{
+	
+	public static void main(String[] args) 
+	{
+		int i,j;
+		
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the String : ");
+		String s1=sc.nextLine();
+		//String s2=s1;
+		for(i=0;i<s1.length();i++)
+		{
+			
+			for(j=i+1;j<s1.length();j++)
+			{
+			if(i==j)
+			{
+				System.out.println(j);
+			}
+			}
+			
+		}
+		
+	}
+}

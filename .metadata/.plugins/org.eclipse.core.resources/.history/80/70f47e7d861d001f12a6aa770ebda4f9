@@ -1,0 +1,9 @@
+package com.chax.practice;
+
+public class Lokesh {
+	int l,k;
+	public void lokeshDiv() {
+		int div=l/k;
+		System.out.println("division of lk :"+div);
+	}
+}

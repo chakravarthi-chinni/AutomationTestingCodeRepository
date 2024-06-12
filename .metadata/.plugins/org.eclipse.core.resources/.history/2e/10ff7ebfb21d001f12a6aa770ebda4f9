@@ -1,0 +1,17 @@
+package com.chax.practice;
+
+public class SaiKrishna extends Raju{
+	int i=45,j=34;
+	int a,b,c;
+	public SaiKrishna() {
+		this.a=super.a;
+		this.b=super.b;
+		this.c=super.c;
+	}
+	public void saiSub() {
+		System.out.println("im sai and i have subtraction problem");
+		int sub=i-j;
+		System.out.println("subtraction of i,j is :"+sub);
+	}
+
+}

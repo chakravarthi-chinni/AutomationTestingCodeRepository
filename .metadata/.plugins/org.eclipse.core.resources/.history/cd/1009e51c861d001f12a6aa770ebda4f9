@@ -1,0 +1,12 @@
+package com.chax.practice;
+
+public class Chax {
+	int a,b,c;
+	public void chax() {
+		System.out.println("I'm chax i have addition problem");
+		int add=a+b+c;
+		System.out.println("addition of abc is :"+add);
+		
+	}
+
+}

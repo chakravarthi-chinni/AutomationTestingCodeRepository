@@ -1,0 +1,27 @@
+package org.chakri.com;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class SeleniumDesignFramework1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		WebDriver driver=new ChromeDriver();
+		driver.get("https://rahulshettyacademy.com/client");
+		driver.findElement(By.id("userEmail")).sendKeys("chakri123@gmail.com");
+		driver.findElement(By.id("userPassword")).sendKeys("Chakri@123");
+		driver.findElement(By.id("login")).click();
+		List<WebElement> listOfProducts=driver.findElements(By.cssSelector(".col-lg-4"));
+		WebElement prod=listOfProducts.stream().filter(product->product.findElement(By.cssSelector("b")).getText().equalsIgnoreCase("ZARA COAT 3")).findFirst().orElse(null);
+		prod.findElement(By.cssSelector(".btn.w-10.rounded")).click();
+
+
+
+	}
+
+}

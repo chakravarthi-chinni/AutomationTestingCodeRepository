@@ -1,0 +1,8 @@
+package com.chax.practice;
+
+public class Raju {
+	public void raju() {
+		System.out.println("im raju and i dont have any problem");
+	}
+
+}

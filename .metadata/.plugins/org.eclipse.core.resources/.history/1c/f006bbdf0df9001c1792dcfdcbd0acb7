@@ -1,0 +1,40 @@
+package com.chax.psl;
+
+import java.util.Scanner;
+
+public class Practice1 
+{
+	/*public static void main(String []args)
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter n values :");
+		int n=sc.nextInt();
+		 int []inta;
+		 for(int i=0;i<=n;i++)
+		 {
+			 if(i==n)
+		 inta=new int[n];
+		 }
+		 System.out.println("n values is :"+n);
+	}*/
+    public static void main (String [] args)
+    {   
+        Scanner sc = new Scanner (System.in);
+
+        int index;
+        int elements;
+
+        System.out.println("Input Array Size");
+        index = sc.nextInt();
+
+
+        for (int i = 0; i < index; i++) 
+        {
+            System.out.println("Array Index is =\t"+index);
+            System.out.println ("Insert the Elements of the Array");
+            break;
+        }
+    }
+
+
+}

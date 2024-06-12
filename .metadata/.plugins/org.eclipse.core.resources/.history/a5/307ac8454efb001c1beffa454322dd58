@@ -1,0 +1,15 @@
+package com.chax.psl;
+
+import java.util.Scanner;
+
+public class ChocoloateFactory 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		
+		
+		
+	}
+
+}

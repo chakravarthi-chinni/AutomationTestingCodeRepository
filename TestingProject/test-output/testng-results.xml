@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-06-06T18:23:48 IST" name="Suite" finished-at="2024-06-06T18:23:48 IST" duration-ms="98">
+    <groups>
+    </groups>
+    <test started-at="2024-06-06T18:23:48 IST" name="test" finished-at="2024-06-06T18:23:48 IST" duration-ms="98">
+      <class name="test.RajuTest">
+        <test-method signature="rajuHobbies()[pri:0, instance:test.RajuTest@d86a6f]" started-at="2024-06-06T18:23:48 IST" name="rajuHobbies" finished-at="2024-06-06T18:23:48 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- rajuHobbies -->
+        <test-method signature="rajuPersonalDetails()[pri:0, instance:test.RajuTest@d86a6f]" started-at="2024-06-06T18:23:48 IST" name="rajuPersonalDetails" finished-at="2024-06-06T18:23:48 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- rajuPersonalDetails -->
+      </class> <!-- test.RajuTest -->
+      <class name="test.SamTest">
+        <test-method signature="samHobbies()[pri:0, instance:test.SamTest@5ab956d7]" started-at="2024-06-06T18:23:48 IST" name="samHobbies" finished-at="2024-06-06T18:23:48 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- samHobbies -->
+        <test-method signature="samPersonalDetails()[pri:0, instance:test.SamTest@5ab956d7]" started-at="2024-06-06T18:23:48 IST" name="samPersonalDetails" finished-at="2024-06-06T18:23:48 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- samPersonalDetails -->
+      </class> <!-- test.SamTest -->
+      <class name="test.SaiTest">
+        <test-method signature="saiHobbies()[pri:0, instance:test.SaiTest@2892d68]" started-at="2024-06-06T18:23:48 IST" name="saiHobbies" finished-at="2024-06-06T18:23:48 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- saiHobbies -->
+        <test-method signature="saiPersonalDetails()[pri:0, instance:test.SaiTest@2892d68]" started-at="2024-06-06T18:23:48 IST" name="saiPersonalDetails" finished-at="2024-06-06T18:23:48 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- saiPersonalDetails -->
+      </class> <!-- test.SaiTest -->
+      <class name="test.LokeshTest">
+        <test-method signature="lokeshHobbies()[pri:0, instance:test.LokeshTest@4145bad8]" started-at="2024-06-06T18:23:48 IST" name="lokeshHobbies" finished-at="2024-06-06T18:23:48 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lokeshHobbies -->
+        <test-method signature="lokeshPersonalDetails()[pri:0, instance:test.LokeshTest@4145bad8]" started-at="2024-06-06T18:23:48 IST" name="lokeshPersonalDetails" finished-at="2024-06-06T18:23:48 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lokeshPersonalDetails -->
+      </class> <!-- test.LokeshTest -->
+      <class name="test.ChakriTest">
+        <test-method signature="chakriHobbies()[pri:0, instance:test.ChakriTest@6340e5f0]" started-at="2024-06-06T18:23:48 IST" name="chakriHobbies" finished-at="2024-06-06T18:23:48 IST" duration-ms="9" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- chakriHobbies -->
+        <test-method signature="chakriPersonalDetails()[pri:0, instance:test.ChakriTest@6340e5f0]" started-at="2024-06-06T18:23:48 IST" name="chakriPersonalDetails" finished-at="2024-06-06T18:23:48 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- chakriPersonalDetails -->
+      </class> <!-- test.ChakriTest -->
+    </test> <!-- test -->
+  </suite> <!-- Suite -->
+</testng-results>

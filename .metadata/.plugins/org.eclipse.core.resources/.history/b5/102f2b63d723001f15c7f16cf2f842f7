@@ -1,0 +1,20 @@
+package org.chax.testing;
+
+import java.util.Arrays;
+import java.util.List;
+
+import org.testng.annotations.Test;
+import org.w3c.dom.NameList;
+
+public class StreamsPrograms {
+
+	@Test
+	public void streams() {
+		String names[] = { "Lokesh", "sam", "chakri", "venu", "Raju", "sai", "ravi" };
+		
+		List<String> listOfNames=Arrays.asList(names);
+		
+
+		listOfNames.stream().filter(nameList->listOfNames.size()<listOfNames.size()+1).forEach(nameList->System.out.println(nameList));
+	}
+}

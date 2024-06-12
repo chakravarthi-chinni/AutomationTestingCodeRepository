@@ -1,0 +1,11 @@
+package com.chax.practice;
+
+public class SaiKrishna {
+	int i=45,j=34;
+	public void saiSub() {
+		System.out.println("im sai and i have subtraction problem");
+		int sub=i-j;
+		System.out.println("subtraction of i,j is :"+sub);
+	}
+
+}

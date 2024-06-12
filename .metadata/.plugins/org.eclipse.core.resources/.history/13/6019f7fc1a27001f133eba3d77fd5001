@@ -1,0 +1,26 @@
+package amazon.chakri.com;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
+
+import amazon.chakri.org.LandingPage;
+import amazon.chakri.org.ProductSelection;
+
+public class AmazonApplication {
+	public String productName;
+	
+	public static void main(String[] args) {
+		WebDriver driver=new ChromeDriver();
+		
+		LandingPage lp=new LandingPage(driver);
+		lp.landingPage();
+		ProductSelection ps=new ProductSelection(driver,productName);
+		ps.itemSearch();
+		ps.choosenItem(productName);
+		
+	}
+
+}

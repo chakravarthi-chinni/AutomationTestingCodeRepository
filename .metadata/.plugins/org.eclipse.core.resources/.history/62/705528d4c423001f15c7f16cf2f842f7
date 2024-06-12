@@ -1,0 +1,27 @@
+package org.chax.testing;
+
+import java.time.Duration;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+public class BrokenLinksProgram {
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+		WebDriver driver=new ChromeDriver();
+		//WebDriverWait wait=new WebDriverWait(5,);
+		driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
+		driver.get("https://rahulshettyacademy.com/AutomationPractice/");
+		//a[contains(text(),'Broken Link')]
+		driver.findElement(By.xpath("//a[contains(text(),'Broken Link')]")).click();
+		Thread.sleep(3000);
+		driver.close();
+		
+
+	}
+
+}

@@ -1,0 +1,98 @@
+package org.chakri.com;
+
+import java.time.Duration;
+import java.util.List;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+import org.testng.asserts.Assertion;
+
+import dev.failsafe.internal.util.Assert;
+
+public class AutomationProject {
+
+	@Test(dataProvider = "getData")
+	public  void standAloneApplication(String email,String pswd,String productName) throws InterruptedException {
+		
+		// TODO Auto-generated method stub
+		WebDriver driver=new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+		POM1 pom=new POM1(driver);
+		pom.landOnPage();
+		pom.logInPage(email,pswd);
+		POM2 pom2=new POM2(driver);
+		List<WebElement> listOfProducts=pom2.listOfProducts();
+		pom2.selectedProductToCart(productName);
+		pom2.goToCart();
+//		pom2.checkCartList(productName);
+//		//pom2.checkOutProduct();
+//		WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(5));
+//wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//ul[@style='list-style-type: none;'] /li[3] /button")));
+//		
+//		driver.findElement(By.xpath("//ul[@style='list-style-type: none;'] /li[3] /button")).click();
+		
+
+Thread.sleep(1000);
+driver.close();
+
+
+	}
+	
+	@DataProvider
+	public String[][] getData() {
+		return new String [][] {{"chakri123@gmail.com","Chakri@123","ZARA COAT 3"},{"chakri123@gmail.com","Chakri@123","ADIDAS ORIGINAL"}};
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//pom2.addProductToCart(productName);
+//pom2.goToCart();
+//List<WebElement> listOfCartElements=pom2.listOfCart();
+////JavascriptExecutor js=(JavascriptExecutor) driver;
+////js.executeScript("window.scrollBy(0,500)");
+//boolean cartItem=listOfCartElements.stream().anyMatch(cartItems->cartItems.getText().equalsIgnoreCase(productName));
+//wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//ul[@style='list-style-type: none;'] /li[3] /button")));
+//
+//driver.findElement(By.xpath("//ul[@style='list-style-type: none;'] /li[3] /button")).click();
+//Actions a=new Actions(driver);
+//a.sendKeys(driver.findElement(By.xpath("//input[@placeholder='Select Country']")),"ind").build().perform();
+//wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".ta-results.list-group.ng-star-inserted")));
+//driver.findElement(By.xpath("//section /button[2]")).click();
+//wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".btnn.action__submit.ng-star-inserted")));
+//Thread.sleep(2000);
+//driver.findElement(By.cssSelector(".btnn.action__submit.ng-star-inserted")).click();
+////	System.out.println(driver.findElement(By.cssSelector("h1[class='hero-primary']")).getText());
+

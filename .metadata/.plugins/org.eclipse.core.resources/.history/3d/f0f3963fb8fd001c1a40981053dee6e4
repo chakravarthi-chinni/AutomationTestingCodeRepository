@@ -1,0 +1,25 @@
+package com.chax.psl;
+import java.util.*;
+public class LetterByLetterGap 
+{
+	public static void main(String[] args) 
+	{	int i;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the String : ");
+		String s1=sc.nextLine();
+		String s2="";
+		for(i=0;i<s1.length();i++)
+		{
+			int count=0;
+			if(i/2==0)
+			{
+				s2=s2+s1.charAt(i);
+				count++;
+			}
+		}
+		System.out.println(s2);
+	}
+		
+	
+
+}
