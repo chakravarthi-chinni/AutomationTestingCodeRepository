@@ -34,9 +34,9 @@ public class ExtentReportDemo {
 		ExtentTest test=extent.createTest("extentReportsDemo");
 		WebDriver driver=new ChromeDriver();
 		driver.get("https://rahulshettyacademy.com/");
-		System.out.println(driver.getTitle());
+		System.out.println("get title :"+driver.getTitle());
 		driver.close();
-		test.fail("result not found");
+		//test.fail("result not found");
 		
 		extent.flush();
 	}

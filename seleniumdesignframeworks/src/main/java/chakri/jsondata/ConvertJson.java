@@ -9,8 +9,6 @@ import org.apache.commons.io.FileUtils;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.JsonMappingException;
-import com.fasterxml.jackson.core.JsonProcessingException;
 
 public class ConvertJson {
 	

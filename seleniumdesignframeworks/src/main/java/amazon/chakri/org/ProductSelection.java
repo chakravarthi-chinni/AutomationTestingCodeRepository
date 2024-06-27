@@ -2,13 +2,10 @@ package amazon.chakri.org;
 
 import java.time.Duration;
 import java.util.List;
-import java.util.stream.Stream;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.remote.RemoteWebDriverBuilder;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -51,9 +48,9 @@ public class ProductSelection {
 	}
 	
 	public void choosenItem(String productName) {
-		WebElement itemSearchs=(WebElement) searchItemsList.stream().
-				filter(itemList->itemList.findElement(By.xpath("//div [@class='s-suggestion-container']")).getText().equalsIgnoreCase(productName));
-		itemSearchs.click();
+		//WebElement itemSearchs=(WebElement) searchItemsList.stream().
+				//filter(itemList->itemList.findElement(By.xpath("//div [@class='s-suggestion-container']")).getText().equalsIgnoreCase(productName));
+		//itemSearchs.click();
 //		System.out.println(itemSearch);
 		
 		//.a-size-medium.a-color-base.a-text-normal

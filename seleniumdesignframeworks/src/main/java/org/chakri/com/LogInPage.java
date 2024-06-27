@@ -1,21 +1,17 @@
 package org.chakri.com;
 
-import java.io.File;
-import java.io.IOException;
-
-import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.By;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class POM1 {
+import chakri.absract.AbstractComponents;
+
+public class LogInPage extends AbstractComponents{
 	WebDriver driver;
 	
-	public POM1(WebDriver driver){
+	public LogInPage(WebDriver driver){
+		super(driver);
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
 		
@@ -39,12 +35,13 @@ public class POM1 {
 			driver.get("https://rahulshettyacademy.com/client");
 		}
 		
-		public String getScreeshot(String testCaseName,WebDriver driver) throws IOException {
-			TakesScreenshot ts=(TakesScreenshot)driver;
-			File source=ts.getScreenshotAs(OutputType.FILE);
-			File file=new File(System.getProperty("user.dir")+"//Reports"+testCaseName+".png");
-			FileUtils.copyFile(source, file);
-			return System.getProperty("user.dir")+"//Reports"+testCaseName+".png";
+		
+		@FindBy(css = "div[aria-label='Incorrect email or password.']")
+		WebElement errorValidate;
+		public String getErrorMessage() {
+			waitVisisbilityToWebElementAppear(errorValidate);
+			System.out.println(errorValidate.getText());
+			return errorValidate.getText();
 		}
 
 }
