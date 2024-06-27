@@ -29846,3 +29846,7 @@ org.eclipse.core.runtime.CoreException: Launch configuration ChakriTest, ... ref
 2024-06-27 15:52:10,542 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\chinni_chakravarthi\eclipse-workspace\seleniumdesignframeworks\src\main\resources
 2024-06-27 15:52:10,549 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2024-06-27 15:52:10,549 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\chinni_chakravarthi\eclipse-workspace\seleniumdesignframeworks\src\test\resources
+2024-06-27 16:07:07,774 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-06-27 16:07:07,775 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\chinni_chakravarthi\eclipse-workspace\seleniumdesignframeworks\src\main\resources
+2024-06-27 16:07:07,775 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-06-27 16:07:07,775 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\chinni_chakravarthi\eclipse-workspace\seleniumdesignframeworks\src\test\resources
