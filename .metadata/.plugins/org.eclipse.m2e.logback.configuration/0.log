@@ -29850,3 +29850,4 @@ org.eclipse.core.runtime.CoreException: Launch configuration ChakriTest, ... ref
 2024-06-27 16:07:07,775 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\chinni_chakravarthi\eclipse-workspace\seleniumdesignframeworks\src\main\resources
 2024-06-27 16:07:07,775 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2024-06-27 16:07:07,775 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\chinni_chakravarthi\eclipse-workspace\seleniumdesignframeworks\src\test\resources
+2024-06-27 17:57:47,632 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
